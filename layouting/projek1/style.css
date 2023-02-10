@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oleo+Script+Swash+Caps&family=PT+Sans:ital,wght@0,700;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* , html , body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    height: 100vh;
+}
+
+
+/* Home */
+.containerhome {
+    background-image: url(https://img.freepik.com/free-photo/delicious-healthy-asian-food-black-textured-background-with-copy-space_24972-1019.jpg?w=996&t=st=1662801609~exp=1662802209~hmac=f158e660a0fb9ecc197f6344cb7a821b2b660f64a60ba14e9e7081d09c0424a3);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+nav {
+    background-color: rgb(52, 52, 52);
+    width: 100%;
+    height: 80px;
+    position: fixed;
+}
+
+.logo {
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    margin-left: 12%;
+}
+
+.logo a {
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.menu {
+    justify-content: flex-end;
+    margin-right: 12%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.list {
+    list-style-type: none;
+    margin: 6px;
+    padding: 10px;
+}
+
+.list:hover {
+    text-decoration-line: underline;
+}
+
+a {
+    color: bisque;
+    text-decoration-line: none;
+}
+
+.intro {
+    color: #fff;
+    float: left;
+    text-align: center;
+    margin-left: 8%;
+    margin-top: 20%;
+}
+
+.intro h1 {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.pesanan {
+    margin-top: 10px;
+}
+
+.pesanan a {
+    font-weight: bold;
+}
+
+.pesanan:hover {
+    text-decoration-line: underline;
+}
+
+
+/* Menu */
+.containermenu {
+    background-color: #D7C0AE;
+    height: 100%;
+}
+
+.wrappermenu {
+    margin-top: 100px;
+    margin-left: 50px;
+    overflow: visible;
+    padding: 10px;
+    width: 350px;
+    height: 380px;
+    display: inline-block;
+    border-radius: 20px;
+    background-color: #FDEEDC;
+}
+
+.wrappermenu h3 {
+    text-align: center;
+}
+
+.wrappermenu p {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.wrappermenu img {
+    width: 250px;
+    height: 200px;
+    margin-left: 40px;
+    border-radius: 20px;
+}
+
+.content {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background-color: #967E76;
+    width: max-content;
+    padding: 10px;
+}
+
+.content a {
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.content:hover {
+    background-color: rgb(46, 46, 46);
+}
+
+
+/* Pemesanan */
+.containerpesanan {
+    background-image: url(https://img.freepik.com/free-photo/delicious-healthy-asian-food-gray-textured-background-with-copy-space_24972-1024.jpg?w=996&t=st=1663152751~exp=1663153351~hmac=3aacb68e30830f25a4f70de15c190d1558affb6d17d82a3bb484695d4161e92f);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.order {
+    width: 340px;
+    left: 0;
+    height: 100%;
+    padding-top: 78px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: white;
+}
+
+.order h3 {
+    padding: 10px 0;
+}
+
+.order-wrapper {
+    height: 180px;
+    width: 100%;
+    overflow: scroll;
+    margin: 20px 0;
+}
+
+.order-wrapper::-webkit-scrollbar {
+    width: 7px;
+}
+
+.order-wrapper::-webkit-scrollbar-track {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.order-wrapper::-webkit-scrollbar-thumb {
+    background-color: darkgray;
+    border-radius: 20px;
+}
+
+.order-card {
+    display: grid;
+    grid-template-columns: 0.6fr 1fr 0.5fr;
+    padding: 10px 0;
+    gap: 5px;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.order-image {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.order-detail input {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border: 2px solid grey;
+    border-radius: 10px;
+    background-color: transparent;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.divider {
+    width: 100%;
+    border: 1px dashed grey;
+}
+
+.order-total p {
+    padding: 10px 0;
+}
+
+.order-total p span {
+    float: right;
+    font-weight: 600;
+}
+
+.checkout {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background-color: red;
+    border: none;
+    border-radius: 20px;
+    color: lightgray;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.checkout:hover {
+    background-color: black;
+}
+
+#pesan {
+    display: none;
+}
+
+#pesan:checked ~ .order {
+    display: none;
+}
+
+
+/* Footer */
+footer {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-color: #545454;
+    color: #fff;
+}
+.layar-dalam {
+    padding-left: 45px;
+    padding-right: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.layar-dalam div {
+    width: 20%;
+}
+.layar-dalam h5 {
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.layar-dalam .copyright {
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #666;
+    text-align: center;
+}

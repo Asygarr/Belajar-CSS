@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /**
+        * For modern browsers
+        * 1. The space content is one way to avoid an Opera bug when the
+        *    contenteditable attribute is included anywhere else in the document.
+        *    Otherwise it causes space to appear at the top and bottom of elements
+        *    that are clearfixed.
+        * 2. The use of `table` rather than `block` is only necessary if using
+        *    `:before` to contain the top-margins of child elements.
+        */
+        .cf:before,
+        .cf:after {
+            content: " "; /* 1 */
+            display: table; /* 2 */
+        }
+        
+        .cf:after {
+            clear: both;
+        }
+        
+        /**
+        * For IE 6/7 only
+        * Include this rule to trigger hasLayout and contain floats.
+        */
+        .cf {
+            *zoom: 1;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            border: 1px solid;
+            width: 602px;
+            margin: auto;
+        }
+
+        .merah {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            float: left;
+        }
+
+        .merah p {
+            text-align: center;
+            line-height: 200px;
+        }
+
+        .kuning {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            float: left;
+        }
+
+        .kuning p {
+            text-align: center;
+            line-height: 200px;
+        }
+
+        .hijau {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+
+        .hijau p {
+            text-align: center;
+            line-height: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container cf">
+        <div class="merah">
+            <p>1</p>
+        </div>
+        <div class="kuning">
+            <p>1</p>
+        </div>
+        <div class="hijau">
+            <p>1</p>
+        </div>
+    </div>
+
+</body>
+</html>

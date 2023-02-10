@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+
+        .satu img {
+            float: left;
+            height: 100px;
+            width: 100px;
+            margin-right: 5px;
+        }
+
+        .dua img {
+            float: left;
+            height: 100px;
+            width: 100px;
+            margin-right: 5px;
+        }
+
+        .tiga img {
+            float: left;
+            height: 100px;
+            width: 100px;
+            margin-right: 5px;
+        }
+
+        .cf:before,
+        .cf:after {
+            content: " "; /* 1 */
+            display: table; /* 2 */
+        }
+
+        .cf:after {
+            clear: both;
+        }
+
+        .cf {
+            *zoom: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="satu"><img src="foto.jpeg"></div>
+    <p class="cf" >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+    <div class="dua"><img src="foto.jpeg"></div> 
+    <p class="cf ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <div class="tiga"><img src="foto.jpeg"></div>
+    <p class="cf" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, blanditiis voluptas possimus sunt dolorum, saepe fugiat cumque harum ea nihil nulla doloribus inventore necessitatibus nobis a dolore eius animi soluta sit debitis architecto. Excepturi iure quae, molestiae ad sunt dignissimos, ex, voluptatem natus porro nobis sit! Totam provident dolorem tempore?</p>
+
+</body>
+</html>
